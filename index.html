@@ -255,7 +255,7 @@
         .btn-card-secondary:hover { border-color: var(--text-main); }
 
         /* RESUME PREVIEW */
-        #resume { padding: 60px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        #resume { padding: 60px 0; }
         @media (min-width: 768px) { #resume { padding: 100px 0; } }
         
         .resume-header-flex { display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
@@ -482,7 +482,7 @@
                     <div class="app-container fade-in">
                         <div class="hero-top-row">
                             <!-- Заменено на фото со свойством object-fit: cover -->
-                            <img src="https://i.ibb.co/yBBTGCCt/image.png" alt="Ульяна Харлинская" class="hero-image-placeholder" style="object-fit: cover;">
+                            <img src="images/avatar.png" alt="Ульяна Харлинская" class="hero-image-placeholder" style="object-fit: cover;">
                             <h1 class="hero-main-text">Эстетика. Логика. AI-ускорение.<br>Создаю современные цифровые продукты с&nbsp;фокусом на пользовательский опыт.</h1>
                         </div>
                         <div class="hero-intro">
@@ -501,7 +501,7 @@
                             <!-- 1. HubClaw -->
                             <div class="portfolio-card fade-in case-card project-featured mockup-card-text" data-case="1">
                                 <div class="portfolio-img-wrapper">
-                                    <img src="https://i.ibb.co/Q3Rmb320/0909.png" alt="HubClaw Dashboard">
+                                    <img src="images/hc_oblozhka.png" alt="HubClaw Dashboard">
                                 </div>
                                 <div class="portfolio-info">
                                     <div class="card-header-flex">
@@ -522,7 +522,7 @@
                             <!-- 2. Креативное агентство NUNC -->
                             <a href="https://nuncstudio.ru/" target="_blank" class="portfolio-card fade-in project-featured mockup-card-text external-link">
                                 <div class="portfolio-img-wrapper">
-                                    <img src="https://i.ibb.co/5XFcpBbm/image.png" alt="NUNC">
+                                    <img src="images/nunc_oblozhka.png" alt="NUNC">
                                 </div>
                                 <div class="portfolio-info">
                                     <div class="card-header-flex">
@@ -543,7 +543,7 @@
                             <!-- 3. Алмазный Мир -->
                             <a href="https://www.figma.com/design/WDc0lyqRpvyz43V7UHoq0x/%D0%90%D0%BB%D0%BC%D0%B0%D0%B7%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B8%D1%80?node-id=0-1&t=4FeGhkWnl4s2jMl0-1" target="_blank" class="portfolio-card fade-in project-featured mockup-card-text external-link" style="transition-delay: 0.1s;">
                                 <div class="portfolio-img-wrapper">
-                                    <img src="https://i.ibb.co/vxVHqDSv/image.png" alt="Алмазный Мир">
+                                    <img src="images/am_oblozhka.png" alt="Алмазный Мир">
                                 </div>
                                 <div class="portfolio-info">
                                     <div class="card-header-flex">
@@ -564,7 +564,7 @@
                             <!-- 4. ToKnow -->
                             <div class="portfolio-card fade-in case-card project-featured mockup-card-text" data-case="5" style="transition-delay: 0.1s;">
                                 <div class="portfolio-img-wrapper">
-                                    <img src="https://i.ibb.co/Fkvd9BNR/TOKNOW.png" alt="ToKnow Новый Кейс">
+                                    <img src="images/tk_oblozhka.png" alt="ToKnow Новый Кейс">
                                 </div>
                                 <div class="portfolio-info">
                                     <div class="card-header-flex">
@@ -586,7 +586,7 @@
                             <div class="portfolio-card fade-in project-featured project-soon-card mockup-card-text" style="transition-delay: 0.2s;">
                                 <div class="portfolio-img-wrapper">
                                     <div class="badge-soon">Скоро</div>
-                                    <img src="https://i.ibb.co/tT3R4tB5/Frame-1597880418.png" alt="Marketplace">
+                                    <img src="images/op_oblozhka.png" alt="Marketplace">
                                 </div>
                                 <div class="portfolio-info">
                                     <div class="card-header-flex">
@@ -662,7 +662,7 @@
 
             <footer>
                 <div class="app-container fade-in">
-                    <p class="copyright">&copy; 2024 Ульяна Харлинская. Crafted with precision.</p>
+                    <p class="copyright">&copy; 2024-2026 Ульяна Харлинская. Crafted with precision.</p>
                 </div>
             </footer>
         </div>
@@ -801,7 +801,7 @@
         const casesData = {
             "1": {
                 title: "HubClaw — B2B SaaS платформа для AI-автоматизации",
-                img: "https://i.ibb.co/Q3Rmb320/0909.png",
+                img: "images/hc_oblozhka.png",
                 tags: ["UX/UI дизайн", "Website", "SaaS"],
                 htmlContent: `
                     <div class="mockup-case-meta">
@@ -809,53 +809,53 @@
                         <strong>Формат:</strong> <span>продуктовая работа (архитектура системы → интерфейс дашбордов и лендинга → pixel-perfect UI-kit → передача в разработку)</span>
                     </div>
 
-                    <img src="https://i.ibb.co/1G293nGJ/0808.png" class="mockup-image" alt="Обложка внутри">
+                    <img src="images/hc_landing.png" alt="Обложка внутри">
 
                     <div class="mockup-section">
                         <h3>Что не так с управлением AI-агентами</h3>
                         <p>Бизнесу все чаще требуются умные боты для автоматизации задач в Telegram и других каналах. Однако их создание обычно <strong>требует сложных технических навыков</strong> и написания кода. Существующие панели управления часто <strong>перегружены сухими метриками</strong>, из-за чего <strong>пользователям трудно разобраться в настройках</strong> и аналитике.</p>
-                        <img src="https://i.ibb.co/5hsvQPvZ/0707.png" class="mockup-image" alt="Проблема">
+                        <img src="images/hc_logo.png" class="mockup-image" alt="Проблема">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Интерфейс вместо программиста</h3>
                         <p>Мне нужно было спроектировать интерфейс платформы HubClaw с нуля. Главная цель заключалась в превращении сложного процесса создания AI-агентов в <strong>интуитивно понятный пользовательский путь.</strong></p>
-                        <img src="https://i.ibb.co/zVcjmB86/0606.png" class="mockup-image" alt="Решение">
+                        <img src="images/hc_dashboard.png" class="mockup-image" alt="Решение">
                         
                         <p><strong>Требовалось разработать удобные дашборды, админ-панели для управления ботами, флоу онбординга, а также промо-лендинг продукта.</strong></p>
-                        <img src="https://i.ibb.co/LDbGWYvH/0505.png" class="mockup-image" alt="Дашборд">
+                        <img src="images/hc_activeagents.png" class="mockup-image" alt="Дашборд">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Архитектура и пользовательские сценарии</h3>
                         <p>Прежде чем рисовать макеты, мы заложили логический фундамент системы. <strong>Я спроектировала подробный User Flow</strong>, который учитывает обе точки входа: веб-версию и Telegram. <strong>Мы продумали каждый шаг пользователя</strong> — от авторизации и проверки квот до сложного многоступенчатого онбординга с настройкой первого бота и оплатой. <strong>Эта схема помогла избежать логических тупиков и сделать интерфейс предсказуемым.</strong></p>
-                        <img src="https://i.ibb.co/vxSYd9y4/image.png" class="mockup-image" alt="Архитектура">
+                        <img src="images/hc_userflow.png" class="mockup-image" alt="Архитектура">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Формирование логики</h3>
                         <p>Следом за блок-схемой мы собрали <strong>интерактивный черно-белый прототип</strong> всей платформы. На этом этапе <strong>мы тестировали структуру</strong> дашборда, админки, деплоя и настроек бота <strong>без привязки к визуальному стилю</strong>.</p>
-                        <img src="https://i.ibb.co/23KqmZMj/Frame-760.png" class="mockup-image" alt="Формирование логики">
+                        <img src="images/hc_chb2.png" class="mockup-image" alt="Формирование логики">
                     </div>
 
                     <div class="mockup-section">
                         <p><strong>Это помогло нам сосредоточиться исключительно на информационной иерархии, расположении элементов и удобстве основных функций.</strong></p>
-                        <img src="https://i.ibb.co/93HK23nj/12345.png" class="mockup-image" alt="Прототип">
+                        <img src="images/hc_chb.png" class="mockup-image" alt="Прототип">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Среда, говорящая на языке Telegram</h3>
                         <p><strong>Я спроектировала архитектуру системы и пошаговый процесс развертывания ботов.</strong> Поскольку основной поток пользователей приходит из Telegram, точка входа реализована прямо через мессенджер — <strong>из бота можно сразу открыть админ-панель</strong>, чтобы посмотреть статистику или задеплоить нового агента.</p>
-                        <img src="https://i.ibb.co/DH1Y1byz/0303.png" class="mockup-image" alt="Среда">
+                        <img src="images/hc_deploy.png" class="mockup-image" alt="Среда">
                         
                         <p>Визуальный стиль построен на чистом и современном минимализме. Главным акцентным оттенком стал <strong>фирменный голубой цвет Telegram</strong>, что <strong>создает привычную среду для нашей аудитории</strong>. <strong>Я структурировала сложные данные для дашбордов, чтобы аналитика считывалась с первого взгляда.</strong> Для точного переноса макетов в код я тесно сотрудничала с фронтенд-разработчиком и собрала pixel-perfect UI-kit.</p>
-                        <img src="https://i.ibb.co/wbpgsV2/0202.png" class="mockup-image" alt="Состояния">
+                        <img src="images/hc_settingsbot.png" class="mockup-image" alt="Состояния">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Дизайн-система, задающая направление</h3>
                         <p>Платформа получила масштабируемый интерфейс, в котором <strong>запуск и настройка AI-агента стали доступны даже нетехническим специалистам</strong>. Макеты, включая анимации для главного экрана, были полностью подготовлены и переданы в разработку. Этот кейс сформировал готовую базу для SaaS-продукта и подтвердил гипотезу о том, что <strong>сложные B2B-инструменты могут быть эстетичными и простыми в использовании.</strong></p>
-                        <img src="https://i.ibb.co/RTQgCgHN/0101.png" class="mockup-image" alt="Результат" style="margin-bottom: 0; width: 100%;">
+                        <img src="images/hc_designsystem.png" class="mockup-image" alt="Результат" style="margin-bottom: 0; width: 100%;">
                     </div>
                 `
             },
@@ -867,46 +867,6 @@
                     <div class="mockup-case-meta">
                         <strong>Моя роль:</strong> <span>UX/UI дизайнер</span><br>
                         <strong>Формат:</strong> <span>маркетплейс (веб-версия)</span>
-                    </div>
-
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Обложка внутри">
-
-                    <div class="mockup-section">
-                        <h3>Ситуация</h3>
-                        <p>Это пример шаблонного текста для кейса. В данной ситуации <strong>продукт нуждался в обновлении</strong> и пересмотре пользовательского опыта. Важно было учесть все нюансы взаимодействия.</p>
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Ситуация">
-                    </div>
-
-                    <div class="mockup-section">
-                        <h3>Задача</h3>
-                        <p>Здесь описана главная задача проекта. Мне предстояло <strong>спроектировать интерфейс с нуля</strong>, проработать архитектуру и собрать интерактивный прототип.</p>
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Задача">
-                    </div>
-
-                    <div class="mockup-section">
-                        <h3>Действие</h3>
-                        <p><strong>Я провела исследование и собрала аналитику</strong>: изучила конкурентов, выявила боли пользователей и составила CJM. <strong>Внедрила новые паттерны навигации</strong> для более быстрого доступа к функциям.</p>
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Действие 1">
-                        
-                        <p><strong>Спроектировала основные экраны платформы и подготовила UI-кит для разработчиков.</strong></p>
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Действие 2">
-                    </div>
-
-                    <div class="mockup-section">
-                        <h3>Результат</h3>
-                        <p>В результате получился чистый и современный <strong>интерфейс, который эффективно решает задачи бизнеса</strong>. Проект успешно передан в разработку и готов к дальнейшему масштабированию.</p>
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Результат" style="margin-bottom: 0;">
-                    </div>
-                `
-            },
-            "3": {
-                title: "ToKnow Dating App (Старая версия)",
-                img: "https://i.ibb.co/SXJ9X6dL/TOKNOW.png",
-                tags: ["UX/UI дизайн", "iOS / Android", "mobile app"],
-                htmlContent: `
-                    <div class="mockup-case-meta">
-                        <strong>Моя роль:</strong> <span>UX/UI дизайнер</span><br>
-                        <strong>Формат:</strong> <span>мобильное приложение</span>
                     </div>
 
                     <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23EBEBEB'/></svg>" class="mockup-image" alt="Обложка внутри">
@@ -981,7 +941,7 @@
             },
             "5": {
                 title: "ToKnow — мобильное приложение для развития эмоциональной близости",
-                img: "https://i.ibb.co/Fkvd9BNR/TOKNOW.png",
+                img: "images/tk_oblozhka.png",
                 tags: ["UX/UI дизайн", "iOS / Android", "Mobile App"],
                 htmlContent: `
                     <div class="mockup-case-meta">
@@ -989,36 +949,36 @@
                         <strong>Формат:</strong> <span>продуктовая работа (идея → структура → интерфейс → прототип)</span>
                     </div>
 
-                    <img src="https://i.ibb.co/t0T489f/1234.png" class="mockup-image no-radius" alt="Обложка внутри">
+                    <img src="images/tk_dobro.png" class="mockup-image no-radius" alt="Обложка внутри">
 
                     <div class="mockup-section">
                         <h3>Ситуация</h3>
                         <p>В обычных дейтинг-сервисах <strong>общение часто остается поверхностным</strong>. Пользователям тяжело переходить к глубоким темам, из-за чего <strong>интерес быстро угасает</strong>. На старте важно было донести ценность искренности и создать правильный настрой для диалога.</p>
-                        <img src="https://i.ibb.co/XfYFhSnm/060606.png" class="mockup-image no-radius" alt="Ситуация">
+                        <img src="images/tk_zaekranom.png" class="mockup-image no-radius" alt="Ситуация">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Задача</h3>
                         <p>Мне предстояло <strong>спроектировать продукт с нуля</strong>: от архитектуры до кликабельного прототипа. Нужно было <strong>объединить психологию общения с игровыми механиками</strong>. Я проработала систему ежедневных заданий, магазин и сценарии вовлечения, чтобы <strong>сделать процесс не только полезным, но и увлекательным</strong>.</p>
-                        <img src="https://i.ibb.co/cX6hB4JJ/050505.png" class="mockup-image no-radius" alt="Задача">
+                        <img src="images/tk_monetki.png" class="mockup-image no-radius" alt="Задача">
                     </div>
 
                     <div class="mockup-section">
                         <h3>Действие</h3>
                         <p><strong>Я разделила контент по типам отношений</strong>: «первое впечатление», «для друзей» и «снова ближе». <strong>Внедрила карточную механику и тематические колоды</strong> для легкого входа в разговор.</p>
-                        <img src="https://i.ibb.co/whQzkB81/040404.png" class="mockup-image no-radius" alt="Действие 1">
+                        <img src="images/tk_kolody.png" class="mockup-image no-radius" alt="Действие 1">
                         
                         <p><strong>Спроектировала путь пользователя: от выбора персонажа и генерации QR-кода до оценки качества вопросов.</strong></p>
-                        <img src="https://i.ibb.co/vb7m0Pv/030303.png" class="mockup-image no-radius" alt="Действие 2">
+                        <img src="images/tk_zvezdy.png" class="mockup-image no-radius" alt="Действие 2">
                         
                         <p><strong>Чтобы снизить тревожность, я добавила формы обратной связи и проработала состояния ошибок.</strong></p>
-                        <img src="https://i.ibb.co/5hSQg7f0/020202.png" class="mockup-image no-radius" alt="Действие 3">
+                        <img src="images/tk_obratnayasvyaz.png" class="mockup-image no-radius" alt="Действие 3">
                     </div>
 
                     <div class="mockup-section" style="margin-bottom: 0;">
                         <h3>Результат</h3>
                         <p>Приложение получило целостную логику и чистый <strong>интерфейс, который не отвлекает от сути — общения</strong>. Я создала гибкую систему персонажей и подготовила дизайн к разработке, включая UI-kit и анимированный прототип. Кейс стал фундаментом для запуска и дальнейшего развития продукта.</p>
-                        <img src="https://i.ibb.co/vvhQsy1M/010101.png" class="mockup-image no-radius" alt="Результат" style="margin-bottom: 0;">
+                        <img src="images/tk_designsystem.png" class="mockup-image no-radius" alt="Результат" style="margin-bottom: 0;">
                     </div>
                 `
             }
