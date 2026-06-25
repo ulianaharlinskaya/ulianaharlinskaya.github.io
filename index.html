@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* ==========================================================================
@@ -34,7 +34,7 @@
         }
 
         body {
-            font-family: 'Montserrat', sans-serif; 
+            font-family: 'Manrope', sans-serif; 
             background-color: var(--bg-color);
             color: var(--text-main); 
             line-height: 1.4; 
@@ -122,7 +122,7 @@
         @media (min-width: 768px) { .hero-image-placeholder { width: 140px; height: 140px; } }
 
         /* Мобильный размер заголовка и растягивание на всю ширину */
-        .hero-main-text { font-size: 1.65rem; letter-spacing: -1px; margin: 0; font-weight: 700; text-wrap: wrap; width: 100%; }
+        .hero-main-text { font-size: 1.55rem; letter-spacing: -1px; margin: 0; font-weight: 700; text-wrap: wrap; width: 100%; }
         @media (min-width: 768px) { 
             .hero-main-text { font-size: 28px; letter-spacing: -1px; width: auto; } 
         }
@@ -463,6 +463,7 @@
 </head>
 <body>
 
+    <!-- ВЬЮ: ПОРТФОЛИО -->
     <div id="view-home" class="page-view">
         <header class="main-header">
             <div class="app-container header-inner">
@@ -480,6 +481,7 @@
                 <section id="hero">
                     <div class="app-container fade-in">
                         <div class="hero-top-row">
+                            <!-- Заменено на фото со свойством object-fit: cover -->
                             <img src="images/avatar.png" alt="Ульяна Харлинская" class="hero-image-placeholder" style="object-fit: cover;">
                             <h1 class="hero-main-text">Эстетика. Логика. AI-ускорение.<br>Создаю современные цифровые продукты с&nbsp;фокусом на пользовательский опыт.</h1>
                         </div>
@@ -496,6 +498,7 @@
                     <div class="app-container">
                         <div class="portfolio-grid">
                             
+                            <!-- 1. HubClaw -->
                             <div class="portfolio-card fade-in case-card project-featured mockup-card-text" data-case="1">
                                 <div class="portfolio-img-wrapper">
                                     <img src="images/hc_oblozhka.png" alt="HubClaw Dashboard">
@@ -516,6 +519,7 @@
                                 </div>
                             </div>
 
+                            <!-- 2. Креативное агентство NUNC -->
                             <a href="https://nuncstudio.ru/" target="_blank" class="portfolio-card fade-in project-featured mockup-card-text external-link">
                                 <div class="portfolio-img-wrapper">
                                     <img src="images/nunc_oblozhka.png" alt="NUNC">
@@ -536,6 +540,7 @@
                                 </div>
                             </a>
 
+                            <!-- 3. Алмазный Мир -->
                             <a href="https://www.figma.com/design/WDc0lyqRpvyz43V7UHoq0x/%D0%90%D0%BB%D0%BC%D0%B0%D0%B7%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B8%D1%80?node-id=0-1&t=4FeGhkWnl4s2jMl0-1" target="_blank" class="portfolio-card fade-in project-featured mockup-card-text external-link" style="transition-delay: 0.1s;">
                                 <div class="portfolio-img-wrapper">
                                     <img src="images/am_oblozhka.png" alt="Алмазный Мир">
@@ -556,6 +561,7 @@
                                 </div>
                             </a>
 
+                            <!-- 4. ToKnow -->
                             <div class="portfolio-card fade-in case-card project-featured mockup-card-text" data-case="5" style="transition-delay: 0.1s;">
                                 <div class="portfolio-img-wrapper">
                                     <img src="images/tk_oblozhka.png" alt="ToKnow Новый Кейс">
@@ -576,6 +582,7 @@
                                 </div>
                             </div>
 
+                            <!-- 5. E-commerce Маркетплейс -->
                             <div class="portfolio-card fade-in project-featured project-soon-card mockup-card-text" style="transition-delay: 0.2s;">
                                 <div class="portfolio-img-wrapper">
                                     <div class="badge-soon">Скоро</div>
@@ -662,6 +669,7 @@
     </div>
 
 
+    <!-- ВЬЮ: РЕЗЮМЕ (Скрыто по умолчанию) -->
     <div id="view-cv" class="page-view hidden">
         <header class="main-header">
             <div class="app-container header-inner">
@@ -771,6 +779,7 @@
     </div>
 
 
+    <!-- МОДАЛЬНОЕ ОКНО -->
     <div id="caseModal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" id="closeModal">
