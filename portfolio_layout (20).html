@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульяна - Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FCFCFC;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .nav-glass {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), rgba(0, 0, 0, 0.07);
+            backdrop-filter: blur(35px);
+            -webkit-backdrop-filter: blur(35px);
+        }
+        
+        .view-hidden {
+            display: none !important;
+        }
+
+        @keyframes blink {
+            0%, 65%, 100% {
+                opacity: 1;
+            }
+            80%, 90% {
+                opacity: 0;
+            }
+        }
+        .animate-blink {
+            animation: blink 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col items-center w-full bg-[#FCFCFC]">
+
+    <!-- HEADER -->
+    <header id="main-header" class="absolute top-0 left-0 w-full pt-[32px] px-[24px] flex justify-center z-50 pointer-events-none transition-transform duration-300 ease-in-out translate-y-0">
+        <div class="w-full max-w-[1680px] flex justify-center">
+            <!-- Avatar (Link to Home) -->
+            <a href="index.html" class="w-[56px] h-[56px] rounded-[100px] overflow-hidden bg-gray-300 pointer-events-auto border-2 border-white/20 shadow-sm block transition-transform hover:scale-105">
+                <img src="./images/avatar.jpg" onerror="this.src='https://placehold.co/56x56/d1d5db/6b7280?text=U'" alt="Avatar" class="w-full h-full object-cover">
+            </a>
+        </div>
+    </header>
+
+    <main class="flex flex-col items-center w-full relative pb-[152px]">
+        <section class="flex flex-col items-center pt-[208px] gap-[48px] w-full max-w-[800px] z-10 px-[24px]">
+            <h1 class="oswald font-semibold text-[32px] md:text-[46px] leading-[1.2] tracking-[-0.02em] uppercase text-center w-full">
+                <span class="text-[#131313]">УЛЬЯНА, 1+ ГОД В ДИЗАЙНЕ</span><br>
+                <span class="text-[#B3B3B3]">РАБОТАЮ НА СТЫКЕ ПРОДУКТОВОЙ ЛОГИКИ И AI ПАЙП-ЛАЙНА</span>
+            </h1>
+            
+            <div class="flex flex-row flex-wrap items-center justify-center gap-[6px] w-full">
+                <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                    <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">B2B</span>
+                </div>
+                <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                    <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">B2C</span>
+                </div>
+                <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                    <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">SAAS</span>
+                </div>
+                <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                    <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">E-COMMERCE</span>
+                </div>
+                <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                    <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">МАРКЕТПЛЕЙСЫ</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center mt-[94px] gap-[16px] w-full max-w-[1680px] z-20">
+            
+            <!-- Case Card 1 (Links to case.html) -->
+            <a href="case.html" class="flex flex-col justify-between items-start py-[24px] px-[24px] hover:px-[40px] w-[calc(100%-48px)] max-w-[1632px] hover:w-[calc(100%-16px)] hover:max-w-[1664px] h-[800px] bg-[#B3B3B3] rounded-[12px] relative overflow-hidden group transition-all duration-300 cursor-pointer block">
+                
+                <!-- Пример загрузки картинки из папки images -->
+                <img src="./images/case1_cover.png" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 group-hover:scale-105" alt="Cover">
+                <div class="absolute inset-0 bg-black/10 z-0"></div> <!-- Легкое затемнение для читаемости -->
+
+                <div class="flex flex-row justify-between items-start w-full relative z-10">
+                    <h2 class="oswald font-semibold text-[28px] md:text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#FAFAFA]">
+                        ПЛАТФОРМА ДЛЯ ПРОДАЖИ AI ПРОМПТОВ
+                    </h2>
+                    <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F94415] rounded-[6px] h-[42px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">МАРКЕТПЛЕЙСЫ</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-row flex-wrap items-center justify-start gap-[6px] w-full relative z-10">
+                    </div>
+                    <div class="flex justify-center items-center px-[10px] py-[8px] bg-[rgba(250,250,250,0.1)] rounded-[6px] h-[37px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#FAFAFA]">ПАНЕЛИ УПРАВЛЕНИЯ</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Case Card 2 -->
+            <a href="case.html" class="flex flex-col justify-between items-start py-[24px] px-[24px] hover:px-[40px] w-[calc(100%-48px)] max-w-[1632px] hover:w-[calc(100%-16px)] hover:max-w-[1664px] h-[800px] bg-[#B3B3B3] rounded-[12px] relative overflow-hidden group transition-all duration-300 cursor-pointer block">
+                
+                <!-- Пример загрузки картинки из папки images -->
+                <img src="./images/case2_cover.png" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 group-hover:scale-105" alt="Cover">
+                <div class="absolute inset-0 bg-black/10 z-0"></div> <!-- Легкое затемнение для читаемости -->
+
+                <div class="flex flex-row justify-between items-start w-full relative z-10">
+                    <h2 class="oswald font-semibold text-[28px] md:text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#FAFAFA]">
+                        НАЗВАНИЕ КЕЙСА
+                    </h2>
+                    <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F94415] rounded-[6px] h-[42px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">МАРКЕТПЛЕЙСЫ</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-row flex-wrap items-center justify-start gap-[6px] w-full relative z-10">
+                    <div class="flex justify-center items-center px-[10px] py-[8px] bg-[rgba(250,250,250,0.1)] rounded-[6px] h-[37px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#FAFAFA]">UX/UI ДИЗАЙН</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Navbar (Fixed to Bottom with Glassmorphism) -->
+    <nav class="fixed bottom-[32px] left-1/2 -translate-x-1/2 flex flex-row items-center px-[24px] py-[16px] gap-[40px] rounded-[6px] nav-glass z-50">
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">РЕЗЮМЕ</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">LINKEDIN</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">ПОЧТА</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">ТГ</span>
+        </a>
+    </nav>
+
+    <!-- Scroll Header Script -->
+    <script>
+        const header = document.getElementById('main-header');
+        let lastScrollY = window.scrollY;
+        let scrollUpDistance = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            // 1. Сброс в самом начале страницы
+            if (currentScrollY <= 10) {
+                header.style.transition = 'none'; // Убираем плавность для моментального сброса
+                header.classList.remove('fixed', '-translate-y-full');
+                header.classList.add('absolute', 'translate-y-0');
+                scrollUpDistance = 0;
+                
+                // Возвращаем transition после сброса
+                setTimeout(() => {
+                    header.style.transition = '';
+                }, 50);
+            } 
+            // 2. Листаем вниз
+            else if (currentScrollY > lastScrollY) {
+                scrollUpDistance = 0; 
+                
+                if (currentScrollY > 120) {
+                    if (header.classList.contains('absolute')) {
+                        header.style.transition = 'none';
+                        header.classList.remove('absolute', 'translate-y-0');
+                        header.classList.add('fixed', '-translate-y-full');
+                        
+                        setTimeout(() => {
+                            header.style.transition = '';
+                        }, 50);
+                    } else if (header.classList.contains('translate-y-0')) {
+                        header.style.transition = '';
+                        header.classList.remove('translate-y-0');
+                        header.classList.add('-translate-y-full');
+                    }
+                }
+            } 
+            // 3. Листаем вверх
+            else if (currentScrollY < lastScrollY) {
+                scrollUpDistance += (lastScrollY - currentScrollY);
+                
+                if (scrollUpDistance >= 80 && currentScrollY > 120) {
+                    header.style.transition = '';
+                    header.classList.add('fixed', 'translate-y-0');
+                    header.classList.remove('absolute', '-translate-y-full');
+                }
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+    </script>
+</body>
+</html>

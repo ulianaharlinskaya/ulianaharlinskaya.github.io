@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульяна - О Кейсе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FCFCFC;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .nav-glass {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), rgba(0, 0, 0, 0.07);
+            backdrop-filter: blur(35px);
+            -webkit-backdrop-filter: blur(35px);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col items-center">
+
+    <!-- Header (Smart Scroll) -->
+    <header id="main-header" class="absolute top-0 left-0 w-full pt-[32px] px-[24px] flex justify-center z-50 pointer-events-none transition-transform duration-300 ease-in-out translate-y-0">
+        <div class="w-full max-w-[1680px] flex justify-center">
+            <!-- Avatar (Ссылка на главную страницу) -->
+            <a href="index.html" class="w-[56px] h-[56px] rounded-[100px] overflow-hidden bg-gray-300 pointer-events-auto border-2 border-white/20 shadow-sm block transition-transform hover:scale-105">
+                <img src="./images/avatar.jpg" onerror="this.src='https://placehold.co/56x56/d1d5db/6b7280?text=U'" alt="Avatar" class="w-full h-full object-cover">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex flex-col items-center w-full bg-[#FCFCFC] pb-[152px]">
+        
+        <!-- Section / Hero (Растянут на 100% ширины) -->
+        <section class="relative flex justify-center items-end px-[24px] pb-[32px] w-full h-[660px] bg-[#FAFAFA] overflow-hidden z-0">
+            <!-- Background Blurs -->
+            <div class="absolute top-[483px] left-1/2 -translate-x-[calc(50%-17.5px)] w-[2049px] h-[608px] bg-[rgba(19,19,19,0.15)] blur-[70.6px] -z-10 pointer-events-none"></div>
+            <div class="absolute bottom-[-114px] left-1/2 -translate-x-1/2 w-[1590px] h-[228px] bg-[rgba(19,19,19,0.04)] blur-[53px] z-10 pointer-events-none"></div>
+            
+            <!-- Hero Content -->
+            <div class="flex flex-row justify-between items-end w-full max-w-[1200px] z-20">
+                <h1 class="oswald font-semibold text-[46px] leading-[1.2] tracking-[-0.02em] uppercase text-[#FAFAFA] max-w-[798px]">
+                    НАЗВАНИЕ ИЛИ ПРОБЛЕМА КЛИЕНТА
+                </h1>
+                <a href="#" class="flex flex-row items-center px-[16px] py-[12px] gap-[8px] w-[135px] h-[72px] bg-[#131313] rounded-[8px] hover:bg-black transition-colors">
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#FAFAFA]">LINK</span>
+                    <svg class="w-[26px] h-[26px] text-[#FAFAFA]" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 19L19 7M19 7H9.4M19 7V16.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section / About -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] pb-[140px] gap-[100px] w-full max-w-[1680px]">
+            <!-- Header -->
+            <div class="flex flex-row justify-between items-center w-full max-w-[1200px] mx-auto">
+                <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313]">
+                    О КЕЙСЕ
+                </h2>
+                <!-- Tags -->
+                <div class="flex flex-row items-center gap-[6px]">
+                    <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">B2B</span>
+                    </div>
+                    <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">ПЛАТФОРМА</span>
+                    </div>
+                    <div class="flex justify-center items-center px-[16px] py-[11px] bg-[#F2F2F2] rounded-[6px] h-[42px]">
+                        <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[#131313]">МАРКЕТПЛЕЙСЫ</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313] w-full max-w-[1200px] mx-auto">
+                В этом кейсе мы рассмотрим процесс переработки сложной b2b платформы в удобный и понятный инструмент. Основной задачей было упростить флоу пользователя, улучшить навигацию и повысить общую конверсию продукта за счет внедрения продуктовой логики.
+            </p>
+
+            <!-- Key Facts Row -->
+            <div class="flex flex-row items-start gap-[6px] w-full max-w-[1200px] mx-auto">
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">РОЛЬ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">UX/UI ДИЗАЙНЕР, ПРОДАКТ</span>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">ВРЕМЯ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">2-3 МЕСЯЦА</span>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">ИНДУСТРИЯ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">B2B, SAAS, МАРКЕТПЛЕЙСЫ</span>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">РАБОТЫ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">CJM, UX/UI, PROTOTYPING</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section / Mockups 1 -->
+        <section class="flex flex-row items-start px-[24px] gap-[6px] w-full max-w-[1680px]">
+            <div class="flex-1 h-[1073px] bg-[#F3F3F3] rounded-[12px]"></div>
+            <div class="flex-1 h-[1073px] bg-[#F3F3F3] rounded-[12px]"></div>
+        </section>
+
+        <!-- Block / Text 1 (Проблема) -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] pb-[140px] gap-[100px] w-full max-w-[1680px]">
+            <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313] w-full max-w-[1200px] mx-auto">
+                ПРОБЛЕМА
+            </h2>
+            <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313] w-full max-w-[1200px] mx-auto">
+                Текущий интерфейс был сильно перегружен лишней информацией, что приводило к высокому показателю отказов на этапе оформления заказа. Пользователям приходилось делать более 10 кликов для совершения целевого действия.
+            </p>
+        </section>
+
+        <!-- Section / Mockups 2 -->
+        <section class="flex flex-row items-start px-[24px] w-full max-w-[1680px]">
+            <div class="w-full h-[991.5px] bg-[#F3F3F3] rounded-[12px]"></div>
+        </section>
+
+        <!-- Block / Text 2 (Решение) -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] pb-[140px] gap-[100px] w-full max-w-[1680px]">
+            <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313] w-full max-w-[1200px] mx-auto">
+                РЕШЕНИЕ
+            </h2>
+            <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313] w-full max-w-[1200px] mx-auto">
+                Мы сократили путь пользователя до 3-х шагов, внедрили умные подсказки и переработали дашборд. Вся ключевая информация теперь доступна на главном экране.
+            </p>
+        </section>
+
+        <!-- Section / Flow -->
+        <section class="flex flex-col items-center px-[24px] gap-[6px] w-full max-w-[1680px]">
+            <!-- Top Row (Buyer / Author) -->
+            <div class="flex flex-row items-center gap-[6px] w-full">
+                
+                <!-- Column / Buyer -->
+                <div class="flex flex-col items-center py-[64px] px-[216px] gap-[64px] flex-1 h-[758px] bg-[#F3F3F3] rounded-[12px]">
+                    <div class="flex flex-row justify-center items-center gap-[12px]">
+                        <div class="w-[16px] h-[16px] bg-[#6EFF29] rounded-full"></div>
+                        <h3 class="oswald font-semibold text-[30px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313]">ПОКУПАТЕЛЬ</h3>
+                    </div>
+                    <!-- List -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col justify-between items-start p-[20px] w-[379px] h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                            <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#131313]">ШАГ 1: ПОИСК</span>
+                            <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">Пользователь вводит запрос и получает релевантные результаты.</span>
+                        </div>
+                        <div class="w-[2px] h-[16px] bg-[#E8E8E8]"></div>
+                        <div class="flex flex-col justify-between items-start p-[20px] w-[379px] h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                            <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#131313]">ШАГ 2: ВЫБОР</span>
+                            <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">Сравнение цен и условий различных поставщиков.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column / Author -->
+                <div class="flex flex-col items-center py-[64px] px-[216px] gap-[64px] flex-1 h-[758px] bg-[#F3F3F3] rounded-[12px]">
+                    <div class="flex flex-row justify-center items-center gap-[12px]">
+                        <div class="w-[16px] h-[16px] bg-[#FF4FF8] rounded-full"></div>
+                        <h3 class="oswald font-semibold text-[30px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313]">ПРОДАВЕЦ</h3>
+                    </div>
+                    <!-- List -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col justify-between items-start p-[20px] w-[379px] h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                            <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#131313]">ШАГ 1: ЗАЯВКА</span>
+                            <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">Продавец получает уведомление о новой заявке.</span>
+                        </div>
+                        <div class="w-[2px] h-[16px] bg-[#E8E8E8]"></div>
+                        <div class="flex flex-col justify-between items-start p-[20px] w-[379px] h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                            <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#131313]">ШАГ 2: ПОДТВЕРЖДЕНИЕ</span>
+                            <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">Обработка заказа и отправка подтверждения покупателю.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column / Intersection -->
+            <div class="flex flex-col items-center justify-center gap-[64px] w-full h-[386px] bg-[#22399A] rounded-[12px]">
+                <h3 class="oswald font-semibold text-[30px] leading-[1.3] tracking-[-0.02em] uppercase text-[#EFF1F5]">
+                    СИНХРОНИЗАЦИЯ ПРОЦЕССОВ
+                </h3>
+                <div class="flex flex-row justify-center items-center w-full max-w-[1200px]">
+                    <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                        <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#22399A]">АВТОМАТИЗАЦИЯ</span>
+                        <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(71,80,117,0.5)]">Система сама обновляет статусы.</span>
+                    </div>
+                    <div class="w-[16px] h-[2px] bg-[#4B5EAC]"></div>
+                    <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                        <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#22399A]">ЕДИНОЕ ОКНО</span>
+                        <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(71,80,117,0.5)]">Вся коммуникация в одном месте.</span>
+                    </div>
+                    <div class="w-[16px] h-[2px] bg-[#4B5EAC]"></div>
+                    <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#FAFAFA] rounded-[8px]">
+                        <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#22399A]">АНАЛИТИКА</span>
+                        <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(71,80,117,0.5)]">Прозрачная статистика для обеих сторон.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block / Text 3 (Итоги) -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] pb-[140px] gap-[100px] w-full max-w-[1680px]">
+            <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313] w-full max-w-[1200px] mx-auto">
+                ИТОГИ
+            </h2>
+            <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313] w-full max-w-[1200px] mx-auto">
+                Проект был успешно запущен в срок. Метрики показали рост вовлеченности на 45%, а время на выполнение целевого действия сократилось вдвое.
+            </p>
+        </section>
+
+        <!-- Section / Mockups 3 -->
+        <section class="flex flex-row items-start px-[24px] gap-[6px] w-full max-w-[1680px]">
+            <div class="flex-1 h-[910px] bg-[#F3F3F3] rounded-[12px]"></div>
+            <div class="flex-1 h-[910px] bg-[#F3F3F3] rounded-[12px]"></div>
+        </section>
+
+        <!-- Block / Text 4 (Выводы) -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] pb-[140px] gap-[100px] w-full max-w-[1680px]">
+            <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313] w-full max-w-[1200px] mx-auto">
+                ВЫВОДЫ
+            </h2>
+            <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313] w-full max-w-[1200px] mx-auto">
+                Ориентация на продуктовую логику и глубокое исследование CJM позволило нам не просто улучшить картинку, но и решить реальные бизнес-задачи клиента.
+            </p>
+        </section>
+
+        <!-- Section / Mockups 4 -->
+        <section class="flex flex-row items-start px-[24px] w-full max-w-[1680px]">
+            <div class="w-full h-[910px] bg-[#F3F3F3] rounded-[12px]"></div>
+        </section>
+
+        <!-- Section / Summary -->
+        <section class="flex flex-col items-start px-[240px] pt-[200px] gap-[100px] w-full max-w-[1680px]">
+            <h2 class="oswald font-semibold text-[36px] leading-[1.3] tracking-[-0.02em] uppercase text-[#131313] w-full max-w-[1200px] mx-auto">
+                ОТЗЫВЫ
+            </h2>
+            
+            <div class="flex flex-col items-start gap-[48px] w-full max-w-[1200px] mx-auto">
+                <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313]">
+                    "Ульяна показала высокий уровень погружения в наш продукт. Благодаря новому интерфейсу мы смогли привлечь больше корпоративных клиентов."
+                </p>
+                <p class="font-normal text-[24px] leading-[1.4] tracking-[-0.02em] text-[#131313]">
+                    "Процесс работы был прозрачным и предсказуемым. Все решения были обоснованы исследованиями."
+                </p>
+            </div>
+
+            <!-- Review Facts Row -->
+            <div class="flex flex-row items-start gap-[6px] w-full max-w-[1200px] mx-auto">
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">КЛИЕНТ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">CEO, TECH CORP</span>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">ОЦЕНКА</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">10/10</span>
+                </div>
+                <!-- Card -->
+                <div class="flex flex-col justify-between items-start p-[20px] gap-[48px] flex-1 h-[170px] bg-[#F3F3F3] rounded-[8px]">
+                    <span class="font-normal text-[18px] leading-[1.4] tracking-[-0.04em] text-[rgba(19,19,19,0.5)]">РЕЗУЛЬТАТ</span>
+                    <span class="oswald font-medium text-[20px] leading-[1.2] tracking-[-0.01em] uppercase text-[#313131]">УСПЕШНЫЙ ЗАПУСК</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navbar (Fixed to Bottom with Glassmorphism) -->
+    <nav class="fixed bottom-[32px] left-1/2 -translate-x-1/2 flex flex-row items-center px-[24px] py-[16px] gap-[40px] rounded-[6px] nav-glass z-50">
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">РЕЗЮМЕ</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">LINKEDIN</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">ПОЧТА</span>
+        </a>
+        <a href="#" class="flex flex-row justify-center items-center gap-[10px] hover:opacity-80 transition-opacity">
+            <span class="oswald font-medium text-[18px] leading-none tracking-[-0.01em] uppercase text-[rgba(19,19,19,0.5)] hover:text-[#131313] transition-colors">ТГ</span>
+        </a>
+    </nav>
+
+    <!-- Scroll Header Script (Fix applied) -->
+    <script>
+        const header = document.getElementById('main-header');
+        let lastScrollY = window.scrollY;
+        let scrollUpDistance = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            // 1. Сброс в самом начале страницы
+            if (currentScrollY <= 10) {
+                header.style.transition = 'none'; // Убираем плавность для моментального сброса
+                header.classList.remove('fixed', '-translate-y-full');
+                header.classList.add('absolute', 'translate-y-0');
+                scrollUpDistance = 0;
+                
+                // Возвращаем transition после сброса
+                setTimeout(() => {
+                    header.style.transition = '';
+                }, 50);
+            } 
+            // 2. Листаем вниз
+            else if (currentScrollY > lastScrollY) {
+                scrollUpDistance = 0; 
+                
+                // Ждем пока хедер точно полностью скроется из виду (120px)
+                if (currentScrollY > 120) {
+                    if (header.classList.contains('absolute')) {
+                        // Прячем его в fixed МОМЕНТАЛЬНО, без анимации
+                        header.style.transition = 'none';
+                        header.classList.remove('absolute', 'translate-y-0');
+                        header.classList.add('fixed', '-translate-y-full');
+                        
+                        setTimeout(() => {
+                            header.style.transition = '';
+                        }, 50);
+                    } else if (header.classList.contains('translate-y-0')) {
+                        // Если он был вызван скроллом вверх (fixed и видим), скрываем его ПЛАВНО
+                        header.style.transition = '';
+                        header.classList.remove('translate-y-0');
+                        header.classList.add('-translate-y-full');
+                    }
+                }
+            } 
+            // 3. Листаем вверх
+            else if (currentScrollY < lastScrollY) {
+                scrollUpDistance += (lastScrollY - currentScrollY);
+                
+                // Если пролистали вверх на 80px или больше — плавно показываем
+                if (scrollUpDistance >= 80 && currentScrollY > 120) {
+                    header.style.transition = '';
+                    header.classList.add('fixed', 'translate-y-0');
+                    header.classList.remove('absolute', '-translate-y-full');
+                }
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+</body>
+</html>
